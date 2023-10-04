@@ -1,0 +1,13 @@
+import discord
+from discord.ext import commands
+
+class Mycogs(commands.Cog):
+    def __init__(self, bot):
+        self.bot = bot
+
+    @commands.command()
+    async def Name_commands(self, ctx):
+        await ctx.reply("¡Hola, este es mi comando!")
+
+async def setup(bot):
+ await bot.add_cog(Mycogs(bot))
