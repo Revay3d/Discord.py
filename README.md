@@ -16,7 +16,7 @@ Un bot con múltiples funciones para ayudar a los servidores de Discord, ya sean
 
 ## Configura tu bot
 + Crea un archivo `.env` dentro de la carpeta `src` 
-  > La ruta del archivo debería ser así `src/.env`
+  > La ruta del archivo debería ser así `.env`
   + escribe lo siguiente en el archivo `.env`:
 
 
