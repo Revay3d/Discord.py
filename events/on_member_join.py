@@ -18,7 +18,9 @@ Somos una comunidad de personas con intereses comunes. Aquí podrás socializar,
         if member.avatar:
             embed.set_thumbnail(url=member.avatar.url)
 
-        embed.set_footer(text=self.bot.user.name, icon_url=self.bot.user.avatar.url)
+        if self.bot.user.avatar:    
+             embed.set_footer(text=self.bot.user.name, icon_url=self.bot.user.avatar.url)
+             
         message = [f"Que bien ya llego {member.mention}", f"uff... y ¿quien eres? {member.name}",
                    f"no ledigan a {member.mention} donde escondi las galletas..."]
 
