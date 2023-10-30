@@ -88,10 +88,6 @@ Un bot con múltiples funciones para ayudar a los servidores de Discord, ya sean
       ```Bash
       python3 -m pip install dotenv
       ```
-    + dotenv
-      ```Bash
-      python3 -m pip install dotenv
-      ```
       + colorama
       ```Bash
       python3 -m pip install colorama
