@@ -5,7 +5,7 @@ import random
 class On_message(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        self.bienvenidas = 1234567890
+        self.bienvenidas = bot.bienvenidas
         self.chat = bot.chat
 
     @commands.Cog.listener()
