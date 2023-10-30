@@ -13,9 +13,10 @@ class Embed(commands.Cog):
     @app_commands.command(name="embed", description="dire lo que quieras en embeds")
     async def embed(self, interaction: discord.Interaction,  titulo: str, descripcion: str):
         embed = discord.Embed(title=titulo,
-                              description=descripcion, color=self.Color)
-        embed.set_thumbnail(url=interaction.user.avatar.url)
-        embed.set_footer(text=interaction.user.name,
+                              description=descripcion, color=self.color)
+        if interaction.user.avatar:
+         embed.set_thumbnail(url=interaction.user.avatar.url)
+         embed.set_footer(text=interaction.user.name,
                          icon_url=interaction.user.avatar.url)
         await interaction.response.send_message("El anuncio ya esta listo", ephemeral=True)
         await interaction.channel.send(embed=embed)
