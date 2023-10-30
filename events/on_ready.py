@@ -3,7 +3,7 @@ from discord.ext import tasks
 import discord
 from colorama import Fore, init
 import os
-import TableIt
+from tabulate import tabulate
 
 class OnReady(commands.Cog):
     def __init__(self, bot):
@@ -12,20 +12,17 @@ class OnReady(commands.Cog):
     @commands.Cog.listener()
     async def on_ready(self):
         print(Fore.GREEN + f"El bot ya esta en linea {Fore.BLUE + str(self.bot.user)}" + Fore.WHITE)
-     
+
         eventos = os.listdir('./events')
+        tabla = []
 
-        tabla = [ ["Eventos", "Estado"]]
-
-      
         for evento in eventos:
-         if evento != "__pycache__":
-          fila = [evento, "Ok"]
-          tabla.append(fila)
+            if evento != "__pycache__":
+                fila = [evento, "Ok"]
+                tabla.append(fila)
 
-   
-        TableIt.printTable(tabla, useFieldNames=True)
-        
+        print(tabulate(tabla, headers=["Eventos", "Estado"], tablefmt="pretty"))
+
         await self.bot.change_presence(activity=discord.Game(name='RevayDev'), status=discord.Status.idle)
         await self.bot.sync_app_commands()
 
