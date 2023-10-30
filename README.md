@@ -77,24 +77,40 @@ Un bot con múltiples funciones para ayudar a los servidores de Discord, ya sean
  3. Descarga los `pip` y modulos
     + discord.py
        ```Bash
-         python3 -m pip install discord.py
+        pip install discord.py
+       ```
+       Si te da error instalalo asi
+        ```Bash
+       pip install python-discord.py
        ```
      + interactions
        ```Bash
-         python3 -m pip install discord.py.interactions
+         pip install discord.py.interactions
+       ```
+       Si te da error instalalo asi
+        ```Bash
+       pip install python-discord.py.interactions
        ```
           
     + dotenv
       ```Bash
-      python3 -m pip install dotenv
+       pip install dotenv
       ```
-      + colorama
+      Si te da error instalalo asi
+        ```Bash
+       pip install python-dotenv
+       ```
+    + colorama
       ```Bash
-      python3 -m pip install colorama
+      pip install colorama
       ```  
     + tabulate
       ```Bash
-       python3 -m pip install tabulate
+       pip install tabulate
+       ```
+        Si te da error instalalo asi
+        ```Bash
+       pip install python-tabulate
        ```
    Si tienes problemas al instalar los anteriores modulos investica como instalar modulos en tu version de pip.
       
