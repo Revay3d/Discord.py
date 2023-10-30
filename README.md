@@ -77,17 +77,22 @@ Un bot con múltiples funciones para ayudar a los servidores de Discord, ya sean
  3. Descarga los `pip` y modulos
     + discord.py
        ```Bash
-        pip install discord
+         python3 -m pip install discord.py
        ```
+     + interactions
+       ```Bash
+         python3 -m pip install discord.py.interactions
+       ```
+          
     + dotenv
       ```Bash
-      pip install dotenv
+      python3 -m pip install dotenv
       ```
-    + TableIt
+    + tabulate
       ```Bash
-       pip install TableIt
+       python3 -m pip install tabulate
        ```
-      Si tienes problemas al instalar este modulo ve a la documentacion oficial: https://github.com/SuperMaZingCoder/TableIt
+   Si tienes problemas al instalar los anteriores modulos investica como instalar modulos en tu version de pip.
       
 ## © Licencia MIT
    + Este codigo tiene una ``licencia MIT``
