@@ -21,8 +21,9 @@ class ball(commands.Cog):
             description=f"> tu pregunta fue: {pregunta}\n\n> y yo digo que: {respuesta}" + "\n\n",
            color=self.color
         )
-        embed.set_thumbnail(url=self.bot.user.avatar.url)
-        embed.set_footer(text=self.bot.user.name, icon_url=self.bot.user.avatar.url)
+        if self.bot.user.avatar:
+         embed.set_thumbnail(url=self.bot.user.avatar.url)
+         embed.set_footer(text=self.bot.user.name, icon_url=self.bot.user.avatar.url)
 
         await interaction.response.send_message(embed=embed)
 
