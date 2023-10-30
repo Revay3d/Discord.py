@@ -15,7 +15,8 @@ class On_member_remove(commands.Cog):
 Hasta pronto, ¡cuídate mucho! 😊 """, color=self.bot.color)  # Usa self.bot.color aquí
             if member.avatar:
                 embed.set_thumbnail(url=member.avatar.url)
-            embed.set_footer(text=self.bot.user.name, icon_url=self.bot.user.avatar.url)
+            if self.bot.user.avatar:    
+             embed.set_footer(text=self.bot.user.name, icon_url=self.bot.user.avatar.url)
 
             await channel.send(embed=embed)
       
