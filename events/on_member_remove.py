@@ -4,7 +4,7 @@ import discord
 class On_member_remove(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        self.despedidas = 12344567890
+        self.despedidas = bot.despedidas
 
     @commands.Cog.listener()
     async def on_member_remove(self, member):  # Añade 'self' aquí
