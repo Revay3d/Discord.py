@@ -12,10 +12,10 @@ TOKEN = os.getenv('Token')
 class MyBot(commands.Bot):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.color = 0xFF4BD3
-        self.bienvenidas = 1131690700245835786
-        self.chat = 1131690700728184905
-        self.despedidas = 1135684910728888380
+        self.color = 0xTU_COLOR
+        self.bienvenidas = ID_CHANNEL
+        self.chat = ID_CHANNEL
+        self.despedidas = ID_CHANNEL
 
 bot = MyBot(command_prefix="+", intents=discord.Intents.all(), help_command=None)
 
