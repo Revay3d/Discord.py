@@ -1,0 +1,16 @@
+import discord
+import interactions
+from discord.ext import commands
+from discord import app_commands
+
+class Maycogs(commands.Cog):
+    def __init__(self, bot):
+        self.bot = bot
+        self.color = bot.color
+   
+    @app_commands.command(name=prueba", description="una descripcion random")
+    async def Name_commands(self, interaction: discord.Interaction, miembro: discord.User = None):
+       #codigo a ejecutar
+
+async def setup(bot):
+    await bot.add_cog(Mycogs(bot))
