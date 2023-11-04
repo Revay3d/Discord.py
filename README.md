@@ -77,14 +77,30 @@ Un bot con múltiples funciones para ayudar a los servidores de Discord, ya sean
 
 
  3. Descarga los `pip` y modulos
+  + Forma rapida de instalar los paquetes
+       > Forma rapida y segura para ti y tu compu
+      ```Bash
+        python -m venv env
+       ```
+        Ruta en windows
+       ```Bash
+         source env/Scripts/activate
+       ```
+        Instalar todos los paquetes
+       ```Bash
+        pip install -r requirements.txt 
+       ```
+
+  + Forma lenta de instalar los paquetes   
+    > No recomendable para ti y tu compu  
+      
+      
+       
     + discord.py
        ```Bash
         pip install discord.py
        ```
-       Si te da error instalalo asi
-        ```Bash
-       pip install python-discord.py
-       ```
+       
      + interactions
        ```Bash
          pip install discord.py.interactions
