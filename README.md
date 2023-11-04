@@ -82,11 +82,11 @@ Un bot con múltiples funciones para ayudar a los servidores de Discord, ya sean
       ```Bash
         python -m venv env
        ```
-        Ruta en windows
+    Ruta en windows
        ```Bash
          source env/Scripts/activate
        ```
-        Instalar todos los paquetes
+    Instalar todos los paquetes
        ```Bash
         pip install -r requirements.txt 
        ```
