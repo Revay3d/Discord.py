@@ -12,10 +12,10 @@ TOKEN = os.getenv('Token')
 class MyBot(commands.Bot):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.color = 0xFFC900
-        self.bienvenidas = 1132092883105755147
-        self.chat = 1132125693317238964
-        self.despedidas = 1132094750103715860
+        self.color = 0xTU_COLOR
+        self.bienvenidas = ID_CHANNEL
+        self.chat = ID_CHANNEL
+        self.despedidas = ID_CHANNEL
 
 bot = MyBot(command_prefix="+", intents=discord.Intents.all(), help_command=None)
 
@@ -31,7 +31,9 @@ async def load():
                 module_name = path.replace('/', '.').replace('\\', '.')[2:-3]
 
                 if not bot.get_cog(module_name.split('.')[-1]):
+                  try:
                     await bot.load_extension(module_name)
+                  except: pass 
 
 
    for filename in os.listdir('./events'):

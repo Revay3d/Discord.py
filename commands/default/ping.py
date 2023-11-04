@@ -14,9 +14,8 @@ class myCog(commands.Cog):
     async def ping(self, interaction: discord.Interaction):
         bot_latency = round(self.bot.latency * 1000)
         embed = discord.Embed(title=f"Ping", description=f"Pong! {bot_latency} ms.", color=self.color)
-        if self.bot.user.avatar:
-         embed.set_thumbnail(url=self.bot.user.avatar.url)
-         embed.set_footer(text=self.bot.user.name, icon_url=self.bot.user.avatar.url)
+        embed.set_thumbnail(url=self.bot.user.avatar.url)
+        embed.set_footer(text=self.bot.user.name, icon_url=self.bot.user.avatar.url)
         await interaction.response.send_message(embed=embed)
 
 
