@@ -31,7 +31,9 @@ async def load():
                 module_name = path.replace('/', '.').replace('\\', '.')[2:-3]
 
                 if not bot.get_cog(module_name.split('.')[-1]):
+                  try:
                     await bot.load_extension(module_name)
+                  except: pass 
 
 
    for filename in os.listdir('./events'):
