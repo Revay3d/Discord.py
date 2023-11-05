@@ -22,8 +22,8 @@ class ball(commands.Cog):
            color=self.color
         )
         if self.bot.user.avatar:
-         embed.set_thumbnail(url=self.bot.user.avatar.url)
-         embed.set_footer(text=self.bot.user.name, icon_url=self.bot.user.avatar.url)
+          embed.set_thumbnail(url=self.bot.user.avatar.url)
+          embed.set_footer(text=self.bot.user.name, icon_url=self.bot.user.avatar.url)
 
         await interaction.response.send_message(embed=embed)
 
