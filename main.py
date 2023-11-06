@@ -4,6 +4,8 @@ from dotenv import load_dotenv
 import asyncio
 from discord import Intents
 import discord
+from keep_alive import keep_alive
+keep_alive()
 
 load_dotenv()
 TOKEN = os.getenv('Token')
