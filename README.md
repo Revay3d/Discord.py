@@ -4,7 +4,7 @@ Un bot con múltiples funciones para ayudar a los servidores de Discord, ya sean
 
 <p align="center">
   
-<img src="https://img.shields.io/badge/version-1.0-green"/> 
+<img src="https://img.shields.io/badge/version-1.2-green"/> 
 <img src="https://img.shields.io/badge/author-RevayDev-blue"/> 
 <img src="https://img.shields.io/badge/licencia-MIT-red"/> 
 <img src="https://img.shields.io/badge/aria-Bot de discord.py-yellow"/>
