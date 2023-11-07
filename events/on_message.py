@@ -9,7 +9,7 @@ class Onmessage(commands.Cog):
 
     @commands.Cog.listener()
     async def on_message(self, message):
-        await self.bot.process_commands(message)
+        
         modmail_channel = discord.utils.get(
             self.bot.get_all_channels(), name="bot-log")
         if message.author == self.bot.user:
