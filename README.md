@@ -19,7 +19,7 @@ Un bot con múltiples funciones para ayudar a los servidores de Discord, ya sean
    ¿No tienes Git? https://git-scm.com/
   
   2. Descargar ``python``
-   
+   > Si tiene errores puedes descargar la vercion de python 3.10.0 o la 3.11.5
    En sistemas operativos basados en Debian y Ubuntu, puedes usar el siguiente comando para descargar e instalar Python:
  ```Bash
  sudo apt update
@@ -129,6 +129,10 @@ Un bot con múltiples funciones para ayudar a los servidores de Discord, ya sean
         Si te da error instalalo asi
         ```Bash
        pip install python-tabulate
+       ```
+    + tabulate
+      ```Bash
+       pip install flask
        ```
    Si tienes problemas al instalar los anteriores modulos investica como instalar modulos en tu version de pip.
       
